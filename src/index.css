@@ -1,0 +1,59 @@
+@import 'tailwindcss';
+
+@font-face {
+  font-family: 'jakarta';
+  src: url('/font/jakarta.woff2') format('woff2');
+  font-display: block;
+}
+
+@theme {
+  --color-primary: #fcc80c;
+  --color-secondary: #1D1D1D;
+  --color-neutral: #fffbeb;
+}
+
+html.lenis {
+  scroll-behavior: auto !important;
+}
+
+body {
+  font-family: 'jakarta';
+  overflow-x: hidden;
+  overscroll-behavior: none;
+}
+
+.input {
+  @apply w-full border-b border-gray-300 pb-2 focus:outline-none placeholder:text-black/80 placeholder:text-sm placeholder:font-medium px-1;
+}
+
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number'] {
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+.marquee_parent::before{
+    content: ' ';
+    z-index: 10;
+    width: 10%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-image: linear-gradient(to right, #ffffff, transparent);
+}
+.marquee_parent::after{
+    content: ' ';
+    z-index: 10;
+    width: 10%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background-image: linear-gradient(to left, #ffffff, transparent);
+}
