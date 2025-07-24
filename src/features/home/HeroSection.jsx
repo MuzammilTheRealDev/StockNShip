@@ -37,10 +37,11 @@ const HeroSection = () => {
       <div className="relative z-10 mt-16 max-w-7xl 2xl:max-w-7xl mx-auto overflow-hidden">
         <img
           src="/images/dashboard.webp"
-          fetchPriority="high"
+          fetchpriority="high"
           alt="StockNShip ecommerce dashboard preview"
           className="w-full object-cover"
         />
+
       </div>
     </section>
   );

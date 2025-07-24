@@ -3,7 +3,7 @@
 @font-face {
   font-family: 'jakarta';
   src: url('/font/jakarta.woff2') format('woff2');
-  font-display: block;
+  font-display: swap;
 }
 
 @theme {

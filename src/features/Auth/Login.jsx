@@ -89,7 +89,7 @@ const Login = () => {
                                             component='button'
                                             type='submit'
                                             bgClass="bg-primary"
-                                            width="w-full"
+                                            width="w-full cursor-pointer"
                                             borderClass="border-primary border-2"
                                             hoverBgClass='bg-secondary'
                                             hoverTextClass='hover:text-primary'

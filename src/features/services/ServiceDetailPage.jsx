@@ -5,6 +5,7 @@ import BreadCrum from '../../components/layout/BreadCrum';
 import { serviceDetailData } from '../../content/Content';
 import WhyUs from '../About/WhyUs';
 import AnimatedButton from '../../components/buttons/AnimatedButton';
+import SEO from '../../components/layout/SEO';
 
 const ServiceDetailPage = () => {
     const { slug } = useParams();
@@ -14,15 +15,21 @@ const ServiceDetailPage = () => {
 
     return (
         <>
-            <BreadCrum title={`${service.title}`} />
+            <SEO
+                title={service.title}
+                description={`See the detail of our ${service.title} service`}
+                url="https://stocknship.com/how-it-works"
+                image="https://stocknship.com/images/work.svg"
+            />
+            <BreadCrum title={`${service.title}`} child='Service' />
             <main className='pb-16'>
                 <section>
                     <div className="max-w-6xl w-full mx-auto py-10 px-6">
                         <Link
                             to="/services"
-                            className="inline-flex items-center text-primary font-semibold mb-6 hover:underline"
+                            className="inline-flex items-center font-semibold mb-6 hover:underline text-black hover:text-primary duration-200"
                         >
-                            <FontAwesomeIcon icon={faArrowLeft} className="mr-2" /> Back to Services
+                            <FontAwesomeIcon icon={faArrowLeft} className="mr-2 text-primary " /> <span className=''>Back to Services</span>
                         </Link>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center py-6">
                             <div className="">
@@ -39,16 +46,16 @@ const ServiceDetailPage = () => {
                                 <p className="text-gray-600 leading-relaxed whitespace-pre-line">
                                     {service.description}
                                 </p>
-                            <div className="flex justify-center lg:justify-start mt-6">
-                                <AnimatedButton
-                                    to="/pricing"
-                                    bgClass="bg-secondary"
-                                    width="w-60"
-                                    borderClass="border-secondary"
-                                >
-                                    Get your quote today
-                                </AnimatedButton>
-                            </div>
+                                <div className="flex justify-center lg:justify-start mt-6">
+                                    <AnimatedButton
+                                        to="/pricing"
+                                        bgClass="bg-secondary"
+                                        width="w-60"
+                                        borderClass="border-secondary"
+                                    >
+                                        Get your quote today
+                                    </AnimatedButton>
+                                </div>
                             </div>
                         </div>
 

@@ -103,7 +103,7 @@ const Register = () => {
                                         <AnimatedButton
                                             component='button'
                                             type='submit'
-                                            bgClass="bg-primary"
+                                            bgClass="bg-primary cursor-pointer"
                                             width="w-full"
                                             borderClass="border-primary border-2"
                                             hoverBgClass='bg-secondary'

@@ -21,7 +21,6 @@ const Index = () => {
             <WhyUs />
             <Testimonials />
             <CTA2 />
-
         </>
     )
 }

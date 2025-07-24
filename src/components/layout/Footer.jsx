@@ -67,6 +67,7 @@ const Footer = () => {
                             {contactInfo.map(({ label, value }) => (
                                 <p key={label}>{`${label}: ${value}`}</p>
                             ))}
+                            <p>&copy; {currentYear} Stocknship all rights reserved  </p>
                         </div>
 
                         <div className="w-full md:w-2/4 lg:w-1/3 space-y-4">
@@ -101,7 +102,8 @@ const Footer = () => {
                 <div className="bg-white h-px my-10" />
 
                 <p className="text-center">
-                    &copy; {currentYear} Stocknship. All rights reserved.
+                    
+                    Made from &hearts; by <a href="https://www.linkedin.com/in/muzammiltherealdev" target='_blank' className='font-semibold hover:text-primary duration-200'>Muzammil Hassan</a>
                 </p>
             </div>
         </footer>

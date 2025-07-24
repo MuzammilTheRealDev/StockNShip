@@ -5,6 +5,7 @@ export const navLinks = [
     { name: "How it Works", path: "/how-it-works" },
     { name: "About Us", path: "/about-us" },
     { name: "Contact", path: "/contact-us" },
+    { name: "Login/Register", path: "/login" },
 ];
 
 export const faqData = [
@@ -167,10 +168,10 @@ export const logos = [
 
 export const contactInfo = [
     { label: "Email", value: "info@stocknship.com" },
-    { label: "Phone", value: "555-567-8901" },
+    { label: "Phone", value: "(310) 555-0142" },
     {
         label: "Address",
-        value: "1234 Main St Moonstone City, Stardust State 12345",
+        value: "456 Hollywood Blvd, Los Angeles, CA 90028",
     },
 ];
 

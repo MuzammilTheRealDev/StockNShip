@@ -1,6 +1,8 @@
 import { faEnvelope, faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useForm } from 'react-hook-form'
+import { toast } from 'react-toastify';
+import AnimatedButton from '../../components/buttons/AnimatedButton';
 
 const ContactForm = () => {
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
@@ -8,12 +10,13 @@ const ContactForm = () => {
         console.log("Form submitted");
         console.log(data);
         reset();
+        toast.success('Message sent successfully')
     }
     const info = [
         {
             icon: faPhone,
             title: 'Contact Us',
-            detail: '+91 901 669 4506',
+            detail: '(310) 555-0142',
         },
         {
             icon: faEnvelope,
@@ -23,7 +26,7 @@ const ContactForm = () => {
         {
             icon: faLocationDot,
             title: 'Location',
-            detail: 'Nalanda Society, Block No: 7',
+            detail: '456 Hollywood Blvd, Los Angeles, CA 90028',
         },
     ]
     return (
@@ -67,7 +70,17 @@ const ContactForm = () => {
                                     rows={4} className='bg-[#936BE80D] w-full p-3 rounded-md focus:outline-none' placeholder='Message'></textarea>
                                 {errors.message && <p className="text-red-500 text-sm">{errors.message.message}</p>}
                             </div>
-                            <button type='submit' className='bg-primary w-fit p-3 rounded-lg px-4 text-white font-semibold cursor-pointer'>Send Message</button>
+                            <AnimatedButton
+                                component='button'
+                                type='submit'
+                                bgClass="bg-primary"
+                                width="w-fit px-6 cursor-pointer"
+                                borderClass="border-primary border-2"
+                                hoverBgClass='bg-secondary'
+                                hoverTextClass='hover:text-primary'
+                            >
+                                Send Message
+                            </AnimatedButton>
                         </div>
                     </form>
                 </div>

@@ -1,21 +1,23 @@
+import { lazy, Suspense } from 'react'
 import { Route, Routes } from 'react-router-dom'
-import HomePage from '../features/home/Index'
-import ServicesPage from '../features/services/Index'
-import ServiceDetailPage from '../features/services/ServiceDetailPage'
-import PricingPage from '../features/Pricing/Index'
-import HowItWorksPage from '../features/HowItWorks/Index'
-import AboutUsPage from '../features/About/Index'
-import ContactUsPage from '../features/Contact/Index'
-import NotFound from '../components/layout/NotFound'
 import AppLayout from './AppLayout'
-import Login from '../features/Auth/Login'
-import Register from '../features/Auth/Register'
+import PageLoader from '../components/layout/PageLoader'
+const HomePage = lazy(() => import('../features/home/Index'))
+const ServicesPage = lazy(() => import('../features/services/Index'))
+const ServiceDetailPage = lazy(() => import('../features/services/ServiceDetailPage'))
+const PricingPage = lazy(() => import('../features/Pricing/Index'))
+const HowItWorksPage = lazy(() => import('../features/HowItWorks/Index'))
+const AboutUsPage = lazy(() => import('../features/About/Index'))
+const ContactUsPage = lazy(() => import('../features/Contact/Index'))
+const Login = lazy(() => import('../features/Auth/Login'))
+const Register = lazy(() => import('../features/Auth/Register'))
+const NotFound = lazy(() => import('../components/layout/NotFound'))
 
 const MainRouting = () => {
     return (
-        <>
+        <Suspense fallback={<PageLoader />}>
             <Routes>
-                <Route element={<AppLayout />} >
+                <Route element={<AppLayout />}>
                     <Route path='' element={<HomePage />} />
                     <Route path='/services' element={<ServicesPage />} />
                     <Route path='/service-detail/:slug' element={<ServiceDetailPage />} />
@@ -28,7 +30,7 @@ const MainRouting = () => {
                 </Route>
                 <Route path='*' element={<NotFound />} />
             </Routes>
-        </>
+        </Suspense>
     )
 }
 

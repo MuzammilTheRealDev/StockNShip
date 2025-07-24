@@ -52,7 +52,7 @@ const Navbar = () => {
                 </NavLink>
 
                 <div className="hidden lg:flex items-center gap-8 text-white font-medium">
-                    {navLinks.slice(0, navLinks.length - 1).map((link) => (
+                    {navLinks.slice(0, navLinks.length - 2).map((link) => (
                         <NavLink
                             key={link.name}
                             to={link.path}
