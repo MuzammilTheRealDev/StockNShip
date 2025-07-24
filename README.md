@@ -1,5 +1,5 @@
 
-# 🚚 StockNShip – Amazon Prep Services Website
+# 🚚 StockNShip – Amazon Prep Services Website (Sheryians Hackathon Project)
 
 Welcome to **StockNShip**, a professionally built React-based website offering **Amazon FBA Prep Services**. Designed with performance, modern UI/UX, and SEO in mind, StockNShip helps sellers streamline their inventory and prep processes with ease and trust.
 
@@ -61,7 +61,8 @@ To run the project locally:
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/stocknship.git
+
+git clone https://github.com/MuzammilTheRealDev/StockNShip.git
 cd stocknship
 
 # Install dependencies
@@ -91,14 +92,15 @@ Contributions are welcome! Feel free to fork this project and submit a PR.
 ## 📩 Contact
 
 Need help or want to connect?  
-📧 Email: your-email@example.com  
-🌐 Website: [www.stocknship.com](https://www.stocknship.com)
+📧 Email: muzammilhassan7080@gmail.com  
+🌐 Website: [www.stock-n-ship.vercel.app](https://www.stock-n-ship.vercel.app)
+🤝 LinkedIn: www.linkedin.com/in/muzammiltherealdev
 
 ---
 
 ## ⭐️ Show Some Love
 
-If you like this project, please consider giving it a ⭐ on [GitHub](https://github.com/yourusername/stocknship)!  
+If you like this project, please consider giving it a ⭐ on [GitHub](https://github.com/MuzammilTheRealDev/StockNShip/)!  
 Let’s help more Amazon sellers scale with ease 🚀
 
 ---
