@@ -108,14 +108,14 @@ function TimelineItem({ step, index, isLeft }) {
                             {step.title}
                         </motion.h1>
 
-                        <motion.h3
+                        <motion.h2
                             className="text-lg text-slate-800 mb-4 font-medium"
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : 20 }}
                             transition={{ duration: 0.6, delay: 0.7 }}
                         >
                             {step.subTitle}
-                        </motion.h3>
+                        </motion.h2>
 
                         <motion.p
                             className="text-gray-500"

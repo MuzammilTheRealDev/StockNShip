@@ -140,7 +140,7 @@ const FormCard = () => {
                                 Next
                             </button>
                         ) : (
-                            <button type="submit" className="bg-black text-white py-2.5 px-4 rounded-full w-full mt-4">
+                            <button type="submit" className="bg-black hover:bg-transparent hover:text-black duration-300 border-2 cursor-pointer border-black text-white py-2.5 px-4 rounded-full w-full mt-4">
                                 Submit
                             </button>
                         )}

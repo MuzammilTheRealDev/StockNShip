@@ -38,35 +38,35 @@ export const faqData = [
 
 export const testimonials = [
     {
-        logo: "WAVES",
+        logo: "Connect X",
         text: "Their system is incredibly intuitive. I always know where my inventory is, and I get real-time updates without any guesswork.",
         name: "Mark T.",
         location: "Austin, TX",
         avatar: "https://randomuser.me/api/portraits/men/1.jpg",
     },
     {
-        logo: "KONTRASTR",
+        logo: "Pro Pulse",
         text: "As a new Amazon seller, I was overwhelmed by all the prep work. Stocknship made it completely stress-free.",
         name: "Lisa M.",
         location: "Denver, CO",
         avatar: "https://randomuser.me/api/portraits/women/2.jpg",
     },
     {
-        logo: "SHELLS",
+        logo: "Boy & Birds",
         text: "Before Stocknship, managing returns was a nightmare. Now it's smooth, fast, and hassle-free.",
         name: "Jonathan R.",
         location: "Chicago, IL",
         avatar: "https://randomuser.me/api/portraits/men/3.jpg",
     },
     {
-        logo: "NEXTGEN",
+        logo: "Link Core",
         text: "The dashboard is clean, easy to use, and perfect for our growing logistics team. It’s exactly what we needed.",
         name: "Sarah L.",
         location: "San Diego, CA",
         avatar: "https://randomuser.me/api/portraits/women/4.jpg",
     },
     {
-        logo: "INVENTRIX",
+        logo: "Pink Room",
         text: "Syncing inventory across platforms used to be chaotic. Stocknship fixed that — and their support team is top-notch.",
         name: "David P.",
         location: "New York, NY",
@@ -159,11 +159,12 @@ export const serviceDetailData = {
 };
 
 export const logos = [
-    "/images/pink.png",
-    "/images/connectx.jpg",
-    "/images/propulse.png",
-    "https://www.boyandbirds.com/images/logo1a.png",
-    "https://linkcore.biz/images/logo.svg",
+    "/images/pink.webp",
+    "/images/connectx.webp",
+    "/images/propulse.webp",
+    "/images/linkcore.svg",
+    "/images/boyAndBirds.webp",
+
 ];
 
 export const contactInfo = [

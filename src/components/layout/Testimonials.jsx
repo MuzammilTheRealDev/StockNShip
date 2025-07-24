@@ -46,7 +46,7 @@ const Testimonials = () => {
             <h2 className="text-3xl sm:text-4xl font-bold">
                 Our partners. <span className="text-black">Our Friends.</span>
             </h2>
-            <h3 className="text-3xl sm:text-4xl font-bold text-primary mt-2">They love us.</h3>
+            <h3 className="text-3xl sm:text-4xl font-bold text-primary mt-2 drop-shadow-md">They love us.</h3>
             <p className="text-gray-500 mt-4 max-w-2xl mx-auto">
                 Hear directly from our amazing clients about how we’ve helped them grow, streamline operations, and achieve real results.
             </p>
@@ -81,7 +81,7 @@ const Testimonials = () => {
                         return (
                             <div
                                 key={index}
-                                className={`flex-shrink-0 mx-2 bg-yellow-50 p-6 rounded-2xl shadow-md text-left transform ${scale} ${zIndex} transition-all duration-700 ease-out ${widthClass}`}
+                                className={`flex-shrink-0 mx-2 bg-neutral p-6 rounded-2xl shadow-md text-left transform ${scale} ${zIndex} transition-all duration-700 ease-out ${widthClass}`}
                             >
                                 <div className="space-y-4">
                                     <h4 className="font-bold flex items-center space-x-2">
@@ -96,7 +96,7 @@ const Testimonials = () => {
                                         />
                                         <div>
                                             <p className="font-semibold text-sm">{t.name}</p>
-                                            <p className="text-xs text-gray-500">{t.location}</p>
+                                            <p className="text-xs text-gray-800">{t.location}</p>
                                         </div>
                                     </div>
                                 </div>

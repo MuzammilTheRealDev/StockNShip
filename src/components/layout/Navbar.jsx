@@ -67,7 +67,7 @@ const Navbar = () => {
                 </div>
 
                 <div className="hidden lg:flex items-center space-x-4 ">
-                    <NavLink to={'/login'} className={'text-white hover:text-primary duration-200'}>
+                    <NavLink to={'/login'} className={'text-white hover:text-primary duration-200'} aria-label="Login">
                         <FontAwesomeIcon className="text-lg" icon={faUser} />
                     </NavLink>
                     <AnimatedButton component="navlink" to="/contact-us" textClass="text-primary" bgClass="bg-transparent" rounded="rounded-full">Get in touch</AnimatedButton>
